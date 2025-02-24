@@ -15,7 +15,7 @@ let proxyIPs = [
 // Randomly select a proxy IP from the list
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let proxyPort = 443;
-let proxyIpTxt = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vcHJveHlpcC50eHQ=');
+let proxyIpTxt = atob('aHR0cHM6Ly9naXRodWIuY29tL2V4c2lzdG9uZS9TdG9uZS9ibG9iL21haW4vYWdlbnRJUC50eHQ=');
 
 // Setting the socks5 will ignore proxyIP
 // Example:  user:pass@host:port  or  host:port
@@ -32,10 +32,10 @@ let ipUrl = [
 
 ];
 let ipUrlTxt = [
-	atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vaXB2NC50eHQ=')
+	atob('aHR0cHM6Ly9naXRodWIuY29tL2V4c2lzdG9uZS9TdG9uZS9ibG9iL21haW4vaXB2NC50eHQ=')
 ];
 let ipUrlCsv = [
-	// atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vaXB2NC5jc3Y=')
+	// atob('aHR0cHM6Ly9naXRodWIuY29tL2V4c2lzdG9uZS9TdG9uZS9ibG9iL21haW4vaXB2NC5jc3Y=')
 ];
 // Preferred addresses with optional TLS subscription
 let ipLocal = [
@@ -62,7 +62,7 @@ let fakeHostName;
 
 // Subscription and conversion details
 let subProtocol = 'https';
-let subConverter = atob('dXJsLnYxLm1r'); // Subscription conversion backend using Sheep's function
+let subConverter = atob('c2cudHJvamFucy50b3A='); // Subscription conversion backend using Sheep's function
 let subConfig = "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/config/ACL4SSR_Mini.ini"; // Subscription profile
 let fileName = 'ExsiStone';
 let isBase64 = true;
@@ -70,8 +70,8 @@ let isBase64 = true;
 let botToken = '';
 let chatID = '';
 
-let projectName = atob('YW1jbHVicy9hbS1jZi10dW5uZWw');
-let ytName = atob('aHR0cHM6Ly95b3V0dWJlLmNvbS9AYW1fY2x1YnM=');
+let projectName = atob('ZXhzaXN0b25lXFN0b25l');
+let ytName = atob('aHR0cHM6Ly9leHNpLmx0ZDo1MDAx');
 const httpPattern = /^http(s)?:\/\/.+/;
 
 if (!isValidUUID(userID)) {
@@ -1344,7 +1344,7 @@ async function showKVPage(env) {
       </head>
       <body>
         <div class="container">
-          <h1>UUID 页面</h1>
+          <h1>UUID管理页面</h1>
           <label for="key">Key:</label>
           <input type="text" id="key" value="${MY_KV_UUID_KEY}" readonly />
           <br/><br/>
